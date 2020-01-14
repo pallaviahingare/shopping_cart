@@ -19,7 +19,7 @@ $name=$_POST['name'];
 //echo $email;
 $name=$_POST['Name'];
 $logo=$_POST['Logo'];
-$res = mysqli_query($con, "INSERT INTO category(id, Name, Logo,) values (null, '".$_POST['Name']."', '".$_POST['Logo']."', '".$_POST['discount_price']."', '".$_POST['description']."')");
+$res = mysqli_query($con, "select INTO category(id, Name, Logo,) values (null, '".$_POST['Name']."', '".$_POST['Logo']."', '".$_POST['discount_price']."', '".$_POST['description']."')");
 
 if($res){
     echo "product added success";
