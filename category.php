@@ -11,7 +11,7 @@ if($con){
     echo "not connected";
 }
 ?>
-<table>
+<table border=1>
  <tr>
     <th>Sr No</th>
     <th>Name</th>
@@ -28,10 +28,10 @@ $res=mysqli_query($con,$query);
 <td><?php echo $data['id']?></td>
 <td><?php echo $data['name']?></td>
 <td><?php echo $data['logo']?></td>
-<td><a href="edit_product.php?id=<?php echo $row['id']?>">Edit</a> 
-<td><a href="delete_product.php?id=<?php echo $row['id']?>">DELETE</a> 
-
+<td><a href="edit_product.php?id=<?php echo $data['id']?>">Edit</a> 
+<td><a href="delete_product.php?id=<?php echo $data['id']?>">DELETE</a> 
  </tr>
+    </table>
 
 <?php
    }
